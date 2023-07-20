@@ -6,7 +6,7 @@
       <h2>{{ houseProp.year }} {{ houseProp.bedrooms }} {{ houseProp.bathrooms }}</h2>
       <p>{{ houseProp.description }}</p>
       <h4>Created By: {{ houseProp.creator.name }}</h4>
-      <!-- <img class="creator-picture" :src="houseProp.creator.picture" :alt="houseProp.creator.name"> -->
+      <img class="creator-picture" :src="houseProp.creator.picture" :alt="houseProp.creator.name">
     </div>
     <div v-if="account.id == houseProp.creatorId"></div>
 
@@ -38,5 +38,11 @@ export default {
   width: 40%;
   object-fit: cover;
   object-position: center;
+}
+
+.creator-picture {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
 }
 </style>

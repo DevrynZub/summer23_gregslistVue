@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="row">
-      <div v-for="house in houses" :key="house.id" class="col-md-10 m-auto mb-3">
+      <div v-for="house in houses" :key="house.id" class="col-md-6 m-auto mb-3">
         <!-- <div class="bg-white border border-dark rounded d-flex">
           <img class="img-fluid" :src="house.imgUrl" :alt="house">
           <div>
